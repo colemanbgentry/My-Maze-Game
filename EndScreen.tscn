@@ -1,0 +1,56 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://main_menu.gd" type="Script" id=1]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1024.0
+margin_bottom = 600.0
+color = Color( 0.172549, 0.00784314, 0.00784314, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="Label" parent="."]
+margin_left = 292.289
+margin_top = -7.62939e-06
+margin_right = 382.289
+margin_bottom = 67.0
+rect_scale = Vector2( 5, 5 )
+text = "You Win!!!"
+align = 1
+valign = 1
+
+[node name="main_menu" type="Button" parent="."]
+margin_left = 347.963
+margin_top = 265.407
+margin_right = 430.963
+margin_bottom = 285.407
+rect_scale = Vector2( 4, 4 )
+text = "Main Menu"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_top = 398.0
+margin_right = 512.0
+margin_bottom = 499.0
+rect_scale = Vector2( 2, 2 )
+text = "Thank you for playing my game. 
+Let me know if you liked it, there are more coming!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="main_menu" to="main_menu" method="_on_main_menu_pressed"]

@@ -1,0 +1,102 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://playbutton.gd" type="Script" id=1]
+
+[node name="Main Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Controls" type="ColorRect" parent="."]
+margin_left = -46.0
+margin_top = -22.0
+margin_right = 1068.0
+margin_bottom = 625.0
+color = Color( 0.239216, 0.0431373, 0.0431373, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 311.171
+margin_top = 132.599
+margin_right = 424.171
+margin_bottom = 163.599
+text = "Yellow House
+ presents"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 308.68
+margin_top = 168.829
+margin_right = 407.68
+margin_bottom = 182.829
+rect_scale = Vector2( 4, 4 )
+text = "My Maze Game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="playbutton" type="Button" parent="."]
+margin_left = 446.012
+margin_top = 272.143
+margin_right = 487.012
+margin_bottom = 292.143
+rect_scale = Vector2( 3, 3 )
+text = "Start"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 34.0179
+margin_top = 374.196
+margin_right = 243.018
+margin_bottom = 405.196
+rect_scale = Vector2( 2, 2 )
+text = "A,S,W,D
+Press to move through the maze"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label4" type="Label" parent="."]
+margin_left = 544.492
+margin_top = 379.22
+margin_right = 759.492
+margin_bottom = 410.22
+rect_scale = Vector2( 2, 2 )
+text = "Make it through the maze to get the fastest time."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label5" type="Label" parent="."]
+margin_left = 216.706
+margin_top = 520.347
+margin_right = 506.706
+margin_bottom = 534.347
+rect_scale = Vector2( 2, 2 )
+text = "Avoid the monsters and escape the dungeon!"
+
+[node name="Label6" type="Label" parent="."]
+margin_left = 593.422
+margin_top = 225.526
+margin_right = 702.422
+margin_bottom = 239.526
+text = "Made with Godot"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="playbutton" to="playbutton" method="_on_playbutton_pressed"]

@@ -1,0 +1,250 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://DugeonLevel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemies_1.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Enemies_3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Enemies_2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Exit.tscn" type="PackedScene" id=6]
+
+[node name="World" type="Node2D"]
+
+[node name="TileMap" parent="." instance=ExtResource( 1 )]
+position = Vector2( 80, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 60.5061, -20.5546 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Group1" type="Node2D" parent="."]
+
+[node name="Enemies" parent="Group1" instance=ExtResource( 3 )]
+position = Vector2( 60.5061, -240 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies2" parent="Group1" instance=ExtResource( 3 )]
+position = Vector2( -253, -760 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies3" parent="Group1" instance=ExtResource( 3 )]
+position = Vector2( -1347, 147 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies4" parent="Group1" instance=ExtResource( 3 )]
+position = Vector2( 60.5061, 760 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies5" parent="Group1" instance=ExtResource( 3 )]
+position = Vector2( 720, 827 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies6" parent="Group1" instance=ExtResource( 3 )]
+position = Vector2( 240, -1160 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies7" parent="Group1" instance=ExtResource( 3 )]
+position = Vector2( 1560, -414 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Group2" type="Node2D" parent="."]
+
+[node name="Enemies2" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -107, -19.9046 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies3" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 440, 574 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies4" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -240, 1080 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies5" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -1120, 1187 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies6" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -347, 1507 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies7" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 533, 1627 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies8" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 133, 1760 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies9" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -374, 2227 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies10" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -1347, 1494 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies11" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -1040, 467 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies12" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -147, 214 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies13" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 1280, 200 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies14" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 600, -427 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies15" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -413, -1533 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies16" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -600, -1093 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies17" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -493, -1200 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies18" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( -94, -1320 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies19" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 107, -1600 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies20" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 13, -1720 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies21" parent="Group2" instance=ExtResource( 5 )]
+position = Vector2( 80, -1960 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Group3" type="Node2D" parent="."]
+
+[node name="Enemies3" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -400, -20.5546 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies4" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -600, -600 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies5" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -667, -253 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies6" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -307, -1093 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies7" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 440, -787 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies8" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -240, -1480 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies9" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 827, -667 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies10" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -613, -1533 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies11" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 1173, -667 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies12" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 1373, -19.9046 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies13" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 1013, 227 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies14" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 880, 867 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies15" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 787, 1093 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies16" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 73.5061, 1293 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies17" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -867, 840 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies18" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -1347, 480 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies19" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -893, 187 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies20" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -1587, -720 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies21" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -720, -1293 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies22" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -480, -1440 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies23" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( -107, -1520 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies24" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 26, -2267 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies25" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 67, -2707 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies26" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 26, -3200 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies27" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 47.5061, -3427 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies28" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 26, -3920 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies29" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 47.5061, -4160 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies30" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 40, -4560 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Enemies31" parent="Group3" instance=ExtResource( 4 )]
+position = Vector2( 47.5061, -4840 )
+scale = Vector2( 0.65, 0.65 )
+
+[node name="Exit" parent="." instance=ExtResource( 6 )]
+position = Vector2( 14621.4, -6345.44 )

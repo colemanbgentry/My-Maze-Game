@@ -1,0 +1,125 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://GameGui.gd" type="Script" id=1]
+
+[node name="GameGui" type="Control"]
+margin_right = 312.0
+margin_bottom = 600.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="VBoxContainer" parent="."]
+margin_right = 312.0
+margin_bottom = 600.0
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+margin_top = 232.0
+margin_right = 312.0
+margin_bottom = 296.0
+custom_constants/margin_right = 25
+custom_constants/margin_top = 25
+custom_constants/margin_left = 25
+custom_constants/margin_bottom = 25
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name Game" type="Label" parent="HBoxContainer/MarginContainer"]
+margin_left = 25.0
+margin_top = 25.0
+margin_right = 287.0
+margin_bottom = 39.0
+text = "My Maze game"
+align = 1
+valign = 1
+uppercase = true
+
+[node name="Time Box" type="MarginContainer" parent="HBoxContainer"]
+margin_top = 300.0
+margin_right = 312.0
+margin_bottom = 314.0
+
+[node name="Time" type="Label" parent="HBoxContainer/Time Box"]
+margin_right = 312.0
+margin_bottom = 14.0
+text = "Time"
+align = 1
+valign = 1
+
+[node name="MarginContainer2" type="MarginContainer" parent="HBoxContainer"]
+margin_top = 318.0
+margin_right = 312.0
+margin_bottom = 332.0
+custom_constants/margin_bottom = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/MarginContainer2"]
+margin_right = 312.0
+margin_bottom = 14.0
+alignment = 1
+
+[node name="Minutes_Tens" type="Label" parent="HBoxContainer/MarginContainer2/HBoxContainer"]
+margin_left = 130.0
+margin_right = 138.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="Minutes_Ones" type="Label" parent="HBoxContainer/MarginContainer2/HBoxContainer"]
+margin_left = 142.0
+margin_right = 150.0
+margin_bottom = 14.0
+text = "0"
+align = 1
+valign = 1
+
+[node name="Middle" type="Label" parent="HBoxContainer/MarginContainer2/HBoxContainer"]
+margin_left = 154.0
+margin_right = 158.0
+margin_bottom = 14.0
+text = ":"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Seconds_Tens" type="Label" parent="HBoxContainer/MarginContainer2/HBoxContainer"]
+margin_left = 162.0
+margin_right = 170.0
+margin_bottom = 14.0
+text = "0"
+
+[node name="Seconds_Ones" type="Label" parent="HBoxContainer/MarginContainer2/HBoxContainer"]
+margin_left = 174.0
+margin_right = 182.0
+margin_bottom = 14.0
+input_pass_on_modal_close_click = false
+text = "0"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer3" type="MarginContainer" parent="HBoxContainer"]
+margin_top = 336.0
+margin_right = 312.0
+margin_bottom = 367.0
+
+[node name="Label" type="Label" parent="HBoxContainer/MarginContainer3"]
+margin_right = 312.0
+margin_bottom = 31.0
+text = "Avoid the monsters! 
+Find the exit as fast as you can!"
+align = 1
+autowrap = true
+
+[node name="Stopwatch" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Stopwatch" to="." method="_on_Stopwatch_timeout"]
